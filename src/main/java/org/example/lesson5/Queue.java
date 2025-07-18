@@ -22,4 +22,7 @@ public abstract class Queue<T> {
     public abstract T peek();
 
     public abstract int size();
+
+    public abstract int getDequeueStatus();
+    public abstract int getPeekStatus();
 }
