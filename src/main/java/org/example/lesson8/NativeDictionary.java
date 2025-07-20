@@ -9,7 +9,7 @@ public abstract class NativeDictionary<T> {
     // постусловие: элемент добавлен в таблице по ключу key
     public abstract void put(String key, T value);
 
-    // предусловие: элемент присутствует в таблице
+    // предусловие: ключ присутствует в таблице
     // постусловие: элемент удален из таблицы вместе с ключом
     public abstract void remove(String key);
 
