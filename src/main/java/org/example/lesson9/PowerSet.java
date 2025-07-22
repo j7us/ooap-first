@@ -1,8 +1,8 @@
-package org.example.lesson7;
+package org.example.lesson9;
 
-public abstract class HashTable<T> {
+abstract class HashTable<T> {
 
-    public HashTable(Integer size) {}
+    public HashTable() {}
 
     // Команды
 
@@ -23,4 +23,13 @@ public abstract class HashTable<T> {
     public abstract int getPutStatus();
     public abstract int getRemoveStatus();
     public abstract int getFindStatus();
+}
+
+public abstract class PowerSet<T> extends HashTable<T> {
+
+    public PowerSet() {}
+
+    // предусловие: элемент не присутствует в таблице
+    // постусловие: добавлен новый элемент
+    public abstract void put(T element);
 }
